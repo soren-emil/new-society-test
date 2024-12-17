@@ -7,20 +7,79 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 0;
             line-height: 1.6;
         }
-        h1 {
+        nav {
+            background: #333;
+            padding: 1rem;
+            color: white;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
             color: #333;
         }
         p {
             color: #666;
         }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+        button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #444;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to Our New Society</h1>
-    <p>This is a simple test page for our new project. We're just getting started!</p>
-    <p>Stay tuned for more exciting content.</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section id="home">
+            <h1>Welcome to Our New Society</h1>
+            <p>This is a simple test page for our new project. We're just getting started!</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a forward-thinking organization dedicated to making positive changes in our community.</p>
+            <p>Our mission is to bring people together and create meaningful connections.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea rows="4" placeholder="Your Message"></textarea>
+                <button>Send Message</button>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
